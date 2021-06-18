@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2019 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<!--        <androidx.constraintlayout.widget.Group-->
+<!--            android:id="@+id/group"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:constraint_referenced_ids="group_1,group_2" />-->
+
+        <com.xuexiang.xui.widget.progress.CircleProgressView
+            android:id="@+id/progressView_circle_small"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            app:cpv_animate_type="AccelerateDecelerateInterpolator"
+            app:cpv_circle_broken="false"
+            app:cpv_end_color="#FF5722"
+            app:cpv_end_progress="100"
+            app:cpv_isFilled="false"
+            app:cpv_isTracked="true"
+            app:cpv_progress_duration="2000"
+            app:cpv_progress_textColor="#28AAFB"
+            app:cpv_progress_textSize="30sp"
+            app:cpv_progress_width="10dp"
+            app:cpv_start_color="#0052a3"
+            app:cpv_start_progress="0"
+            app:cpv_track_color="#009688"
+            app:cpv_track_width="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+<!--        <com.xuexiang.xui.widget.button.switchbutton.SwitchButton-->
+<!--            android:id="@+id/sb_group"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.4" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/group_1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@color/app_color_theme_1"-->
+<!--            android:text="我是group成员group_1"-->
+<!--            android:textColor="@color/xui_config_color_white"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/sb_group"-->
+<!--            app:layout_constraintStart_toStartOf="@id/sb_group"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/sb_group" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/group_2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@color/app_color_theme_1"-->
+<!--            android:text="我是group成员group_2"-->
+<!--            android:textColor="@color/xui_config_color_white"-->
+<!--            app:layout_constraintStart_toStartOf="@id/group_1"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/group_1" />-->
+
+
+
+
+
+        <jaygoo.widget.wlv.WaveLineView
+            android:id="@+id/waveLineView"
+            app:wlvBackgroundColor="#eef3f7"
+            app:wlvMoveSpeed="290"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+            android:id="@+id/play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            android:background="@drawable/ic_stop"
+            app:sb_shape_type="round"
+            />
+        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/play"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            android:background="@drawable/ic_back"
+            app:sb_shape_type="round"
+            />
+        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+            android:id="@+id/forward"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/play"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            android:background="@drawable/ic_forward"
+            app:sb_shape_type="round"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/speed"-->
+<!--            style="@style/TextStyle.Content"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.82"-->
+<!--            app:layout_constraintHorizontal_bias="0.04"-->
+<!--            android:text="调整速度:1.0x" />-->
+
+<!--        <SeekBar-->
+<!--            android:id="@+id/seekBar_offset_x"-->
+<!--            style="@style/Widget.AppCompat.SeekBar.Discrete"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.85"-->
+<!--            android:max="10"-->
+<!--            android:progress="5" />-->
+
+        <Button
+            android:id="@+id/start_audio"
+            style="@style/RoundButton.Auto"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/selector_audio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/play"
+        app:sb_shape_type="round" />
+
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="@string/menu_trending" />
+
+</LinearLayout>

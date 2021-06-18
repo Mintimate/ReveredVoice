@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2021 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <path
+        android:fillColor="#2c2c2c"
+        android:pathData="M512 35.031579C247.915789 35.031579 35.031579 247.915789 35.031579 512S247.915789 988.968421 512 988.968421 988.968421 776.084211 988.968421 512 776.084211 35.031579 512 35.031579z m0 916.210526C269.473684 951.242105 72.757895 754.526316 72.757895 512S269.473684 72.757895 512 72.757895 951.242105 269.473684 951.242105 512 754.526316 951.242105 512 951.242105z">
+</path>
+    <path
+        android:fillColor="#2c2c2c"
+        android:pathData="M463.494737 296.421053h-91.621053c-16.168421 0-29.642105 13.473684-29.642105 29.642105V700.631579c0 16.168421 13.473684 29.642105 29.642105 29.642105h91.621053c16.168421 0 29.642105-13.473684 29.642105-29.642105V323.368421c0-16.168421-13.473684-26.947368-29.642105-26.947368z m-8.084211 393.431579h-75.452631V334.147368h75.452631v355.705264zM652.126316 296.421053h-91.621053c-16.168421 0-29.642105 13.473684-29.642105 29.642105V700.631579c0 16.168421 13.473684 29.642105 29.642105 29.642105h91.621053c16.168421 0 29.642105-13.473684 29.642105-29.642105V323.368421c0-16.168421-13.473684-26.947368-29.642105-26.947368z m-8.084211 393.431579h-75.452631V334.147368h75.452631v355.705264z">
+    </path>
+</vector>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/audio_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="6dp"
+    app:cardBackgroundColor="@color/xui_config_color_white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:contentPaddingBottom="10dp"
+    app:contentPaddingLeft="16dp"
+    app:contentPaddingRight="16dp"
+    app:contentPaddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/audio_avatar"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:riv_is_circle="true" />
+
+                <TextView
+                    android:id="@+id/audio_user_name"
+                    style="@style/TextStyle.Explain"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/xui_config_color_pure_black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/audio_tag"
+                style="@style/TextStyle.Explain"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Java" />
+
+            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                style="@style/RoundButton.Auto"
+                android:id="@+id/audio_delete"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="删除"
+                android:textColor="@color/xui_default_round_btn_white_text"
+                app:rb_backgroundColor="@color/audio_delete"
+                app:rb_borderColor="@color/audio_delete" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                android:id="@+id/audio_back"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/ic_back"
+                app:sb_shape_type="round"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/audio_name"
+                    style="@style/TextStyle.Content"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text="音频"
+                    android:textColor="@color/xui_config_color_pure_black" />
+
+                <TextView
+                    android:id="@+id/audio_createTime"
+                    style="@style/TextStyle.Explain"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text="创建时间：2021-06-16"
+                    android:textColor="?attr/xui_config_color_content_text" />
+
+            </LinearLayout>
+
+
+            <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+                android:id="@+id/audio_forward"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/ic_forward"
+                app:sb_shape_type="round"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/audio_dateString"
+                style="@style/TextStyle.Explain"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|end"
+                android:text="刚刚" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
