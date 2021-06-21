@@ -28,18 +28,51 @@
         android:layout_height="match_parent">
 
 
-<!--        <androidx.constraintlayout.widget.Group-->
-<!--            android:id="@+id/group"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:constraint_referenced_ids="group_1,group_2" />-->
+        <!--        <androidx.constraintlayout.widget.Group-->
+        <!--            android:id="@+id/group"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:constraint_referenced_ids="group_1,group_2" />-->
+
+        <!--        <com.xuexiang.xui.widget.button.switchbutton.SwitchButton-->
+        <!--            android:id="@+id/sb_group"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.4" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/group_1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:background="@color/app_color_theme_1"-->
+        <!--            android:text="我是group成员group_1"-->
+        <!--            android:textColor="@color/xui_config_color_white"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/sb_group"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/sb_group"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/sb_group" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/group_2"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:background="@color/app_color_theme_1"-->
+        <!--            android:text="我是group成员group_2"-->
+        <!--            android:textColor="@color/xui_config_color_white"-->
+        <!--            app:layout_constraintStart_toStartOf="@id/group_1"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/group_1" />-->
+
 
         <com.xuexiang.xui.widget.progress.CircleProgressView
             android:id="@+id/progressView_circle_small"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
             app:cpv_animate_type="AccelerateDecelerateInterpolator"
             app:cpv_circle_broken="false"
             app:cpv_end_color="#FF5722"
@@ -54,137 +87,118 @@
             app:cpv_start_progress="0"
             app:cpv_track_color="#009688"
             app:cpv_track_width="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4" />
-
-<!--        <com.xuexiang.xui.widget.button.switchbutton.SwitchButton-->
-<!--            android:id="@+id/sb_group"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.4" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/group_1"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:background="@color/app_color_theme_1"-->
-<!--            android:text="我是group成员group_1"-->
-<!--            android:textColor="@color/xui_config_color_white"-->
-<!--            app:layout_constraintEnd_toEndOf="@id/sb_group"-->
-<!--            app:layout_constraintStart_toStartOf="@id/sb_group"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/sb_group" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/group_2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:background="@color/app_color_theme_1"-->
-<!--            android:text="我是group成员group_2"-->
-<!--            android:textColor="@color/xui_config_color_white"-->
-<!--            app:layout_constraintStart_toStartOf="@id/group_1"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/group_1" />-->
-
-
-
-
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.393" />
 
         <jaygoo.widget.wlv.WaveLineView
             android:id="@+id/waveLineView"
-            app:wlvBackgroundColor="#eef3f7"
-            app:wlvMoveSpeed="290"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.1" />
+            app:layout_constraintVertical_bias="0.1"
+            app:wlvBackgroundColor="#eef3f7"
+            app:wlvMoveSpeed="290" />
 
         <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
             android:id="@+id/play"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/ic_stop"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
             app:layout_constraintVertical_bias="0.7"
-            android:background="@drawable/ic_stop"
-            app:sb_shape_type="round"
-            />
+            app:sb_shape_type="round" />
+
         <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
             android:id="@+id/back"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/re_play_audio"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="@id/play"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
             app:layout_constraintVertical_bias="0.7"
-            android:background="@drawable/ic_back"
-            app:sb_shape_type="round"
-            />
+            app:sb_shape_type="round" />
+
         <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
             android:id="@+id/forward"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/play_audio"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/play"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
             app:layout_constraintVertical_bias="0.7"
-            android:background="@drawable/ic_forward"
-            app:sb_shape_type="round"
-            />
+            app:sb_shape_type="round" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/speed"-->
-<!--            style="@style/TextStyle.Content"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.82"-->
-<!--            app:layout_constraintHorizontal_bias="0.04"-->
-<!--            android:text="调整速度:1.0x" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/speed"-->
+        <!--            style="@style/TextStyle.Content"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.82"-->
+        <!--            app:layout_constraintHorizontal_bias="0.04"-->
+        <!--            android:text="调整速度:1.0x" />-->
 
-<!--        <SeekBar-->
-<!--            android:id="@+id/seekBar_offset_x"-->
-<!--            style="@style/Widget.AppCompat.SeekBar.Discrete"-->
-<!--            android:layout_width="300dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.85"-->
-<!--            android:max="10"-->
-<!--            android:progress="5" />-->
+        <!--        <SeekBar-->
+        <!--            android:id="@+id/seekBar_offset_x"-->
+        <!--            style="@style/Widget.AppCompat.SeekBar.Discrete"-->
+        <!--            android:layout_width="300dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.85"-->
+        <!--            android:max="10"-->
+        <!--            android:progress="5" />-->
 
         <Button
             android:id="@+id/start_audio"
             style="@style/RoundButton.Auto"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/selector_audio"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.86"
-            />
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintVertical_bias="0.387" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
